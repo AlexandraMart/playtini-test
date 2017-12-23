@@ -1,0 +1,21 @@
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+h2, h3{
+	margin: 0;
+	font-size: inherit;
+	font-weight: normal;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

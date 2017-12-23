@@ -1,0 +1,140 @@
+.menu-main{
+	padding: 0;
+	margin: 0;
+}
+
+.menu-main ul {
+	list-style: none;
+	text-align: left;
+	background: #134094;
+	margin-top: 0;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+
+.menu-main li {display: inline-block;}
+
+.menu-main a {
+	text-decoration: none;
+	letter-spacing: 2px;
+	position: relative;
+	padding-bottom: 20px;
+	font-size: 13px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	letter-spacing: 0.2px;
+}
+
+.menu-main li a:before,
+.menu-main li a:after {
+	content: "";
+	position: absolute;
+	height: 7px;
+	top: auto;
+	right: 50%;
+	bottom: -10px;
+	left: 50%;
+	background: #db0029;
+	transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+
+.menu-main {
+	overflow: hidden;
+	margin-top: 7px;
+	padding-bottom: 23px;
+}
+
+.menu-main a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 30px 11px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+
+.menu-main .btn-navbar {
+	display: none;
+
+}
+
+@media screen and (max-width: 767px) {
+	.menu-main {
+		padding-top: 0;   
+		background: #134094; 
+		padding-bottom: 7px;    
+		margin-bottom: 15px;
+	}
+	.menu-main li:after {content: none;}
+	.menu-main a {
+		padding: 10px 0 10px; 
+		margin: 0 20px;
+	}
+	.menu-main ul{
+		padding-top: 0;
+	}
+	.menu-main li:not(:first-child) {display: none;}
+	.menu-main a.icon {
+		float: right;
+		display: block;
+	}
+
+	.menu-main ul{
+		float: left;
+		text-align: left;
+	}
+	.menu-main .active li:not(:first-child) {display: block;}
+
+	.menu-main{
+		position: relative;
+	}
+	.menu-main a{
+		float: none;
+		text-align: left;
+	}
+
+
+	.menu-main a.btn-navbar {
+		display: block;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		padding: 7px 10px;
+	}
+
+	a.btn-navbar:hover{
+		background: transparent;
+	}
+
+	.btn-navbar .icon-bar {
+		display: block;
+		width: 18px;
+		height: 2px;
+		background-color: #f5f5f5;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	.btn-navbar .icon-bar+.icon-bar {
+		margin-top: 3px;
+	}
+
+	.menu-main li a:before, .menu-main li a:after,
+	.menu-main li a:before, .menu-main li a:after{
+		bottom: 0;
+		height: 3px;
+	}
+
+}
